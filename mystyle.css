@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #52c8ff;
+    font-family: sans-serif;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+
+  .header {
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 50px;
+  }
+
+  .info {
+    text-align: center;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+
+
+.metrics {
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 25px;
+  margin-right: 52%;
+  margin-left: 5%;
+  height: fit-content;
+  text-align: center;
+  font-size: 15px;
+}
+
+.fam-history {
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 25px;
+  margin-right: 5%;
+  margin-left: 52%;
+  height: fit-content;
+  text-align: center;
+  font-size: 15px;
+}
+
+h1, h2{
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
