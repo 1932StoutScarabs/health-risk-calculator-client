@@ -50,8 +50,23 @@
             <h1>Please Select your Blood Pressure and
                 History of Family Medical Issues:</h1><br>
 
-            <h2>Dropdown for BP</h2>
-            <h2>Dropdown for family history</h2>
+            <img src="img/BloodPressure.png" alt="Blood Pressure Categories">
+
+            <label for="dropdown">Blood Pressure:</label>
+            <select id="dropdown" name="options">
+                <option value="normal">Normal</option>
+                <option value="elevated">Elevated</option>
+                <option value="stage1">Stage 1</option>
+                <option value="stage2">Stage 2</option>
+                <option value="crisis">Hypertensive Crisis</option>
+            </select>
+            <label for="dropdown">Family History:</label>
+
+            <form> <!--This is a form instead of dropdown because users need to be able to select more than one option-->
+                <label><input type="checkbox" name="options" value="diabetes"> Diabetes</label><br>
+                <label><input type="checkbox" name="options" value="cancer"> Cancer</label><br>
+                <label><input type="checkbox" name="options" value="alzheimers"> Alzheimer&#8216s</label><br>
+            </form>
             <br>
             <h2>Results:</h2>
         </div>
