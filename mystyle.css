@@ -63,7 +63,34 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* Ensure the image scales properly */
+.fam-history img {
+    max-width: 100%; /* Ensures image does not overflow */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+}
 
+/* Ensure .boxes adapt properly */
+@media screen and (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+    }
+}
+.custom-button {
+    background-color: #ffffff;
+    color: #555;
+    padding: 10px 20px;
+    border: 2px solid #2196f3;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-button:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
 
 /* Heading Styles */
 h1 {
