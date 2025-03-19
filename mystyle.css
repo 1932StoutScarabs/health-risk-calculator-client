@@ -143,6 +143,32 @@ select:focus {
         font-size: 2rem;
     }
 }
+/* Form Elements */
+.weight-input {
+    width: 97%; /* Ensures the input and select fields have the same width */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    cursor: text;
+    transition: border-color 0.3s ease;
+}
+
+/* Add a highlight effect and pointer cursor when hovering */
+.weight-input:hover, select:hover {
+    border-color: #2196f3;
+    cursor: text; /* Highlight cursor on hover */
+}
+
+/* Focus styles for both input and select */
+select:focus, .weight-input:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
 
 
 
