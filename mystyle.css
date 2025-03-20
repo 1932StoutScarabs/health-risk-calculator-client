@@ -193,6 +193,35 @@ select:focus, .weight-input:focus {
     }
 }
 
+/* Summary Section Styles */
+.summary-section {
+    background-color: #f8f9fa;
+    border: 1px solid #2196f3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
+}
+
+.summary-section h3 {
+    color: #2196f3;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.summary-section p {
+    margin: 8px 0;
+    color: #555;
+    line-height: 1.4;
+}
+
+.summary-section p:last-child {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #2196f3;
+}
+
 
 
 

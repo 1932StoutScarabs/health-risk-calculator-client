@@ -106,6 +106,29 @@ window.onload = async function() {
             if (data && typeof data.BMI !== 'undefined' && typeof data.Risk !== 'undefined') {
                 document.querySelector("#result-risk").textContent = `Risk: ${data.Risk}`;
                 document.querySelector("#result-bmi").textContent = `BMI: ${data.BMI}`;
+                
+                // Add summary of all values
+                const summaryDiv = document.createElement("div");
+                summaryDiv.className = "summary-section";
+                summaryDiv.innerHTML = `
+                    <h3>Calculation Summary:</h3>
+                    <p>Age: ${age} years</p>
+                    <p>Height: ${heightFeet}'${heightInches}"</p>
+                    <p>Weight: ${weightValidation.value} lbs</p>
+                    <p>BMI: ${data.BMI}</p>
+                    <p>Blood Pressure: ${bloodPressure}</p>
+                    <p>Family History: ${familyHistory.length > 0 ? familyHistory.join(", ") : "None"}</p>
+                    <p>Risk Category: ${data.Risk}</p>
+                `;
+                
+                // Remove any existing summary
+                const existingSummary = document.querySelector(".summary-section");
+                if (existingSummary) {
+                    existingSummary.remove();
+                }
+                
+                // Add new summary after the results
+                document.querySelector("#result-risk").after(summaryDiv);
             } else {
                 document.querySelector("#result-risk").textContent = "Invalid response format from server";
                 document.querySelector("#result-bmi").textContent = "Invalid response format from server";
